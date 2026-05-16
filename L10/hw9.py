@@ -1,18 +1,18 @@
-def count_digits(number: int) -> int:
-    if type(number) is not int:
+def count_digits(number: int|str) -> int:
+    if number.isdigit():
+        number=int(number)
+    if type(number) not in (int,str):
         print("Error: number must be an integer.")
         return -1
     if number < 0:
         number = -number
     if number == 0:
         return 1
-    count = 0
-    while number > 0:
-        count += 1
-        number //= 10
-    return count
-
-
+    number=str(number)
+    leng=len(number)
+    print(leng)
+print(count_digits("-12334"))
+"""
 def print_digits(number:int)->None:
     if type(number) is not int:
         print("Error type")
@@ -28,13 +28,14 @@ def print_digits(number:int)->None:
         number%=divisor
         divisor//=10
 """
+"""
 number = 112
 digits_count=3
 divisor = 100
 1 iteration ->100>0 => digit = 1 (1) number=12 divisor = 10
 2 iteration ->10>0 => digit = 1 (1) number=2 divisor = 1
 3 iteration ->1>0 => digit = 2 (2) number=0 divisor = 0
-
+"""
 """
 
 print_digits(112)
@@ -86,3 +87,4 @@ def is_lucky_number(number:int)->bool:
 print(is_lucky_number(1122))
 print(is_lucky_number(12345))
 
+"""
