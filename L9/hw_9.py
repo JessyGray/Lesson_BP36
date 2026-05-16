@@ -20,9 +20,9 @@ def positive_integer(number: int) -> int:
         print(res)
 
 
-positive_integer(45326)
+positive_integer(120)
 
-
+ 
 # Task2
 def is_prime_number(number: int) -> bool:
     if type(number) is not int:
@@ -30,7 +30,7 @@ def is_prime_number(number: int) -> bool:
         return False
     if number <= 1:
         return False
-    div = 2
+    div = 2    
     while div < number:
         if number % div == 0:
             return False
@@ -83,3 +83,4 @@ def count_digits(number: int) -> int:
 
 
 print(count_digits(12122))
+"""
