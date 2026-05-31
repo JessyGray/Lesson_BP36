@@ -73,7 +73,7 @@ def replace_subnumber(number: int, sub: int, rep: int) -> int:
     return int(result)
 
 print(replace_subnumber(120120120,0,5))
-
+# Skazali chto loop nado ispolzovat, poetomu replace ne ispolzoval
 
 
 # Task 4
