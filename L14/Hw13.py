@@ -1,12 +1,11 @@
-"""
 # Task 1
 def sum_odd(num: list[int]) -> int:
-    if type(num) is not list:
+    if not isinstance(num, list):
         print("Error: Invalid type")
         return 0
     res = 0
     for i in num:
-        if type(i) is not int:
+        if not isinstance(i, int):
             print("Error: Invalid type")
             return 0
         if i % 2 != 0:
@@ -18,16 +17,14 @@ list1 = [1, 2, 3, 4, 6, -4, -3]
 print(sum_odd(list1))
 
 
-
-
 # Task 2
 def sum_odd_indx(num: list[int]) -> int:
-    if type(num) is not list:
+    if not isinstance(num, list):
         print("Error: Invalid type")
         return 0
     res = 0
     for i in range(len(num)):
-        if type(num[i]) is not int:
+        if not isinstance(num[i], int):
             print("Error: Invalid type")
             return 0
         if i % 2 != 0:
@@ -39,19 +36,17 @@ list1 = [1, 6, 3, 3, 6, -1, -3]
 print(sum_odd_indx(list1))
 
 
-
-
 # Task 3
 def max_element(element: list[int]) -> int:
-    if type(element) is not list:
+    if not isinstance(element, list):
         print("Error: Invalid type")
         return 0
     if len(element) == 0:
-        print("Error: List can't be empty")
+        print("Error: list cant be empty")
         return 0
     res = element[0]
     for i in range(len(element)):
-        if type(element[i]) is not int:
+        if not isinstance(element[i], int):
             print("Error: Invalid type")
             return 0
         if element[i] > res:
@@ -61,9 +56,6 @@ def max_element(element: list[int]) -> int:
 
 list1 = [2, 6, 3, 3, 8, -1, -3]
 print(max_element(list1))
-
-
-"""
 
 
 # Task 4
