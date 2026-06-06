@@ -1,23 +1,7 @@
+from L16.computer_c import Computer
+from L16.employee_c import Employee
+
 # TASK 1
-
-
-class Computer:
-    def __init__(self, brand: str, cpu: str, ram: int, ssd: int):
-        self.brand = brand
-        self.cpu = cpu
-        self.ram = ram
-        self.ssd = ssd
-
-    def info(self):
-        print("Brand", self.brand)
-        print("CPU", self.cpu)
-        print("RAM", self.ram)
-        print("SSD", self.ssd)
-
-    def __str__(self):
-        return f"My computer is a {self.brand} with {self.cpu} CPU, ~{self.ram} MB RAM, and ~{self.ssd} MB SSD."
-
-
 computer1 = Computer("MSI", "Intel Core i7", 16000, 512000)
 computer2 = Computer("Dell", "Intel Core i5", 8000, 256000)
 computer3 = Computer("HP", "AMD Ryzen 5", 1000, 256000)
@@ -77,24 +61,6 @@ print()
 
 
 # TASK 3
-
-class Employee:
-    def __init__(self, name: str, position: str, salary: float, department: str):
-        self.name = name
-        self.position = position
-        self.salary = salary
-        self.department = department
-
-    def info(self):
-        print("Name", self.name)
-        print("Position", self.position)
-        print("Salary", self.salary)
-        print("Department", self.department)
-
-    def __str__(self):
-        return f"Employee {self.name}, position: {self.position}, salary: {self.salary}, department: {self.department}"
-
-
 employee1 = Employee("Jessy", "Manager", 5000, "Sales")
 employee2 = Employee("Alex", "Developer", 7000, "IT")
 employee3 = Employee("Kate", "Accountant", 4500, "Finance")
